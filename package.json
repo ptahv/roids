@@ -1,0 +1,18 @@
+{
+  "name": "roids",
+  "version": "0.0.1-develop.0",
+  "description": "React utility toolbelt",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptahv/roids.git"
+  },
+  "author": "Petri Tahvanainen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ptahv/roids/issues"
+  },
+  "homepage": "https://github.com/ptahv/roids#readme"
+}
