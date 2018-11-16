@@ -5,7 +5,7 @@ React utility toolbelt
 
 | Library | Description | 
 | :- | :- |
-| [bsify] (https://github.com/ptahv/roids/tree/master/packages/bsify) | Library for creating React-components from Bootstrap 4. |
+| [bsify](https://github.com/ptahv/roids/tree/master/packages/bsify) | Library for creating React-components from Bootstrap 4. |
 | [dxify] (https://github.com/ptahv/roids/tree/master/packages/dxify) | Wrapper for Devextreme Devexpress -components. |
 | [holvi] (https://github.com/ptahv/roids/tree/master/packages/dxify) | Library for caching service results. Uses IndexedDB |
 | [komponents] (https://github.com/ptahv/roids/tree/master/packages/komponents) | React-component library. |
