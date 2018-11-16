@@ -1,0 +1,58 @@
+{
+  "name": "komponents",
+  "version": "0.0.1-develop.0",
+  "description": "React-component library.",
+  "main": "dist/kontti.min.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "start": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptahv/komponents.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "components"
+  ],
+  "author": "Petri Tahvanainen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ptahv/komponents/issues"
+  },
+  "homepage": "https://github.com/ptahv/komponents#readme",
+  "peerDependencies": {
+    "react-virtualized": "9.19.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/react": "^4.0.6",
+    "babel-loader": "^8.0.4",
+    "rollup": "^0.67.1",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-postcss": "^1.6.2",
+    "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-terser": "^3.0.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "bootstrap": "^4.1.3",
+    "bsify": "^0.0.1-develop.6",
+    "css-loader": "^1.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-virtualized": "^9.21.0"
+  }
+}

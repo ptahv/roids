@@ -1,0 +1,19 @@
+.container {
+    flex: 1;
+    overflow: auto;
+    position: relative;
+}
+
+.shadowContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.shadow {
+    position: fixed;
+    height: 5px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 2px -4px inset;
+}

@@ -1,0 +1,24 @@
+.ReactVirtualized__Table__headerRow.esc.esc-vtable-row--1 {
+    border-bottom: 1px solid #cadce3;
+    background-color: white;
+}
+
+.esc.esc-vtable-header {
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: capitalize;
+    padding-top: 10px;
+    color: rgb(70, 113, 127);
+}
+
+.ReactVirtualized__Table__row.esc.esc-vtable-row-0 {
+    background-color: white;
+}
+
+.ReactVirtualized__Table__row.esc.esc-vtable-row-1 {
+    background-color: #f1f9ff;
+}
+
+.ReactVirtualized__Table__row.esc-vtable-row-clickable {
+    cursor: pointer;
+}
