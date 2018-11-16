@@ -54,5 +54,6 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-virtualized": "^9.21.0"
-  }
+  },
+  "gitHead": "22dd3d1428a4a117c737418acdc3ecb912cbd3e5"
 }

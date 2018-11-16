@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom'
-
-import Popup from '../Popup/Popup.component.jsx';
+ 
+import Popup from '../Popup/Popup.jsx';
 import styles from './confirmPopup.module.css';
 
 export default ({

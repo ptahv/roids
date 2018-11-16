@@ -1,7 +1,12 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "watch": "node ./scripts/watch.js"
+  },
   "devDependencies": {
-    "lerna": "^3.4.3"
+    "chokidar": "^2.0.4",
+    "lerna": "^3.4.3",
+    "npm-run-all": "^4.1.3"
   }
 }

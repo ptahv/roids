@@ -6,8 +6,7 @@
     "dist",
     "src"
   ],
-  "main": "src/index.js",
-  "unpkg": "dist/bsify.min.js",
+  "main": "dist/bsify.min.js",
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build"
@@ -43,5 +42,6 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-replace": "^2.1.0",
     "rollup-plugin-terser": "^3.0.0"
-  }
+  },
+  "gitHead": "22dd3d1428a4a117c737418acdc3ecb912cbd3e5"
 }

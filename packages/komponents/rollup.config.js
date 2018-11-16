@@ -5,7 +5,7 @@ import replace from 'rollup-plugin-replace'
 import commonjs from 'rollup-plugin-commonjs'
 import { terser } from 'rollup-plugin-terser'
 
-const _plugins = [
+const plugins = [
     nodeResolve({
         jsnext: true
     }),
@@ -14,7 +14,11 @@ const _plugins = [
         exclude: 'node_modules/**'
     }),
 
-    commonjs(),
+    commonjs({
+        namedExports: {
+            'react-dom': ['render']
+        }
+    }),
 
     postcss({
         autoModules: true,
@@ -31,7 +35,7 @@ export default [
           name: 'kontti',
           indent: false
         },
-        plugins: _plugins.concat([
+        plugins: plugins.concat([
           replace({
             'process.env.NODE_ENV': JSON.stringify('development')
           })
@@ -44,7 +48,7 @@ export default [
             name: 'kontti',
             indent: false
         },
-        plugins: _plugins.concat([
+        plugins: plugins.concat([
             replace({
                 'process.env.NODE_ENV': JSON.stringify('production')
             }),
