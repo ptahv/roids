@@ -1,7 +1,7 @@
 import nodeResolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
-import commonjs from 'rollup-plugin-commonjs'
 import replace from 'rollup-plugin-replace'
+import commonjs from 'rollup-plugin-commonjs'
 import { terser } from 'rollup-plugin-terser'
 
 const plugins = [
@@ -13,15 +13,19 @@ const plugins = [
         exclude: 'node_modules/**'
     }),
 
-    commonjs()
+    commonjs({
+        namedExports: {
+            'node_modules/react/index.js': ['createContext']
+        }
+    })
 ]
 
 export default [{
     input: 'src/index.js',
     output: {
-        file: 'dist/bsify.js',
+        file: 'dist/kontti.js',
         format: 'umd',
-        name: 'bsify',
+        name: 'kontti',
         indent: false
     },
     plugins: plugins.concat([
@@ -32,9 +36,9 @@ export default [{
 }, {
     input: 'src/index.js',
     output: {
-        file: 'dist/bsify.min.js',
+        file: 'dist/kontti.min.js',
         format: 'umd',
-        name: 'bsify',
+        name: 'kontti',
         indent: false
     },
     plugins: plugins.concat([

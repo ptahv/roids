@@ -1,7 +1,7 @@
 import nodeResolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
-import commonjs from 'rollup-plugin-commonjs'
 import replace from 'rollup-plugin-replace'
+import commonjs from 'rollup-plugin-commonjs'
 import { terser } from 'rollup-plugin-terser'
 
 const plugins = [
@@ -13,15 +13,15 @@ const plugins = [
         exclude: 'node_modules/**'
     }),
 
-    commonjs()
+    commonjs(),
 ]
 
 export default [{
     input: 'src/index.js',
     output: {
-        file: 'dist/bsify.js',
+        file: 'dist/dxify.js',
         format: 'umd',
-        name: 'bsify',
+        name: 'dxify',
         indent: false
     },
     plugins: plugins.concat([
@@ -32,9 +32,9 @@ export default [{
 }, {
     input: 'src/index.js',
     output: {
-        file: 'dist/bsify.min.js',
+        file: 'dist/dxify.min.js',
         format: 'umd',
-        name: 'bsify',
+        name: 'dxify',
         indent: false
     },
     plugins: plugins.concat([

@@ -14,10 +14,8 @@ const plugins = [
         exclude: 'node_modules/**'
     }),
 
-    commonjs({
-        namedExports: {
-            'react-dom': ['render']
-        }
+    commonjs({ 
+        namedExports: { 'react-dom': ['render'] }
     }),
 
     postcss({
@@ -26,41 +24,39 @@ const plugins = [
     })
 ]
 
-export default [
-    {
-        input: 'src/index.js',
-        output: {
-          file: 'dist/kontti.js',
-          format: 'umd',
-          name: 'kontti',
-          indent: false
-        },
-        plugins: plugins.concat([
-          replace({
+export default [{
+    input: 'src/index.js',
+    output: {
+        file: 'dist/kontti.js',
+        format: 'umd',
+        name: 'kontti',
+        indent: false
+    },
+    plugins: plugins.concat([
+        replace({
             'process.env.NODE_ENV': JSON.stringify('development')
-          })
-        ])
-    }, {
-        input: 'src/index.js',
-        output: {
-            file: 'dist/kontti.min.js',
-            format: 'umd',
-            name: 'kontti',
-            indent: false
-        },
-        plugins: plugins.concat([
-            replace({
-                'process.env.NODE_ENV': JSON.stringify('production')
-            }),
-            terser({
-                compress: {
-                    pure_getters: true,
-                    unsafe: true,
-                    unsafe_comps: true,
-                    warnings: false
-                }
-            })
-        ])
-    }
-]
+        })
+    ])
+}, {
+    input: 'src/index.js',
+    output: {
+        file: 'dist/kontti.min.js',
+        format: 'umd',
+        name: 'kontti',
+        indent: false
+    },
+    plugins: plugins.concat([
+        replace({
+            'process.env.NODE_ENV': JSON.stringify('production')
+        }),
+        terser({
+            compress: {
+                pure_getters: true,
+                unsafe: true,
+                unsafe_comps: true,
+                warnings: false
+            }
+        })
+    ])
+}]
     

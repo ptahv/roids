@@ -1,8 +1,8 @@
 {
   "presets": [[
     "@babel/preset-env", {
-      "useBuiltIns": "usage",
-      "loose" : true 
+        "useBuiltIns": "usage",
+        "loose" : true
     }], 
     
     "@babel/preset-react"

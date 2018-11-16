@@ -15,8 +15,8 @@ function exec(cmd) {
     
     chokidar.watch('./packages/' + package + '/dist/').on('change', 
         () => {
-            exec('npm run build --prefix ./packages/' + package);
-            console.log('Built ' + package)
+            exec('lerna link');
+            console.log('Linked');
         })
 })
 

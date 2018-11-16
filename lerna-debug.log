@@ -1,0 +1,215 @@
+0 silly argv { _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.4.3',
+0 silly argv   '$0':
+0 silly argv    'C:\\Users\\Petri\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js' }
+1 notice cli v3.4.3
+2 verbose rootPath C:\repos\ptahv\roids
+3 info versioning independent
+4 info Verifying npm credentials
+5 http fetch GET 200 https://registry.npmjs.org/-/whoami 1242ms
+6 silly npm whoami received {"username":"ptahv"}
+7 silly argv { _: [ 'publish' ],
+7 silly argv   composed: 'publish',
+7 silly argv   lernaVersion: '3.4.3',
+7 silly argv   '$0':
+7 silly argv    'C:\\Users\\Petri\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js' }
+8 verbose rootPath C:\repos\ptahv\roids
+9 silly isAnythingCommitted
+10 verbose isAnythingCommitted 1
+11 silly currentBranch
+12 verbose currentBranch master
+13 silly isBehindUpstream
+14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "bsify@0.0.1-develop.8-2-gcbbe2d2" => {"lastTagName":"bsify@0.0.1-develop.8","lastVersion":"0.0.1-develop.8","refCount":"2","sha":"cbbe2d2","isDirty":false}
+18 info Looking for changed packages since bsify@0.0.1-develop.8
+19 verbose updated bsify
+20 verbose updated komponents
+21 verbose git-describe undefined => "bsify@0.0.1-develop.8-2-gcbbe2d2"
+22 silly git-describe parsed => {"lastTagName":"bsify@0.0.1-develop.8","lastVersion":"0.0.1-develop.8","refCount":"2","sha":"cbbe2d2","isDirty":false}
+23 silly batched [ PackageGraphNode {
+23 silly batched     name: 'bsify',
+23 silly batched     externalDependencies:
+23 silly batched      Map {
+23 silly batched        '@babel/cli' => [Object],
+23 silly batched        '@babel/core' => [Object],
+23 silly batched        '@babel/preset-env' => [Object],
+23 silly batched        'rollup' => [Object],
+23 silly batched        'rollup-plugin-babel' => [Object],
+23 silly batched        'rollup-plugin-commonjs' => [Object],
+23 silly batched        'rollup-plugin-node-resolve' => [Object],
+23 silly batched        'rollup-plugin-replace' => [Object],
+23 silly batched        'rollup-plugin-terser' => [Object],
+23 silly batched        '@babel/polyfill' => [Object],
+23 silly batched        'react' => [Object] },
+23 silly batched     localDependencies: Map {},
+23 silly batched     localDependents: Map { 'komponents' => [PackageGraphNode] } } ]
+24 silly batched [ PackageGraphNode {
+24 silly batched     name: 'komponents',
+24 silly batched     externalDependencies:
+24 silly batched      Map {
+24 silly batched        '@babel/cli' => [Object],
+24 silly batched        '@babel/core' => [Object],
+24 silly batched        '@babel/preset-env' => [Object],
+24 silly batched        '@babel/preset-react' => [Object],
+24 silly batched        '@storybook/react' => [Object],
+24 silly batched        'babel-loader' => [Object],
+24 silly batched        'rollup' => [Object],
+24 silly batched        'rollup-plugin-babel' => [Object],
+24 silly batched        'rollup-plugin-commonjs' => [Object],
+24 silly batched        'rollup-plugin-node-resolve' => [Object],
+24 silly batched        'rollup-plugin-postcss' => [Object],
+24 silly batched        'rollup-plugin-replace' => [Object],
+24 silly batched        'rollup-plugin-terser' => [Object],
+24 silly batched        '@babel/polyfill' => [Object],
+24 silly batched        'bootstrap' => [Object],
+24 silly batched        'css-loader' => [Object],
+24 silly batched        'react' => [Object],
+24 silly batched        'react-dom' => [Object],
+24 silly batched        'react-virtualized' => [Object] },
+24 silly batched     localDependencies: Map {},
+24 silly batched     localDependents: Map {} } ]
+25 silly gitAdd [ 'C:\\repos\\ptahv\\roids\\packages\\bsify\\package.json',
+25 silly gitAdd   'C:\\repos\\ptahv\\roids\\packages\\komponents\\package.json' ]
+26 silly gitCommit Publish
+26 silly gitCommit
+26 silly gitCommit  - bsify@0.0.1-develop.9
+26 silly gitCommit  - komponents@0.0.1-develop.2
+27 verbose git [ 'commit',
+27 verbose git   '-F',
+27 verbose git   'C:\\Users\\Petri\\AppData\\Local\\Temp\\2f260dc1-e8fd-46cb-9fe6-d445ed9d98f0\\lerna-commit.txt' ]
+28 silly gitTag bsify@0.0.1-develop.9
+29 verbose git [ 'tag', 'bsify@0.0.1-develop.9', '-m', 'bsify@0.0.1-develop.9' ]
+30 silly gitTag komponents@0.0.1-develop.2
+31 verbose git [ 'tag',
+31 verbose git   'komponents@0.0.1-develop.2',
+31 verbose git   '-m',
+31 verbose git   'komponents@0.0.1-develop.2' ]
+32 info git Pushing tags...
+33 silly gitPush origin master
+34 silly batched [ PackageGraphNode {
+34 silly batched     name: 'bsify',
+34 silly batched     externalDependencies: Map { '@babel/polyfill' => [Object], 'react' => [Object] },
+34 silly batched     localDependencies: Map {},
+34 silly batched     localDependents: Map { 'komponents' => [PackageGraphNode] } } ]
+35 silly batched [ PackageGraphNode {
+35 silly batched     name: 'komponents',
+35 silly batched     externalDependencies:
+35 silly batched      Map {
+35 silly batched        '@babel/polyfill' => [Object],
+35 silly batched        'bootstrap' => [Object],
+35 silly batched        'css-loader' => [Object],
+35 silly batched        'react' => [Object],
+35 silly batched        'react-dom' => [Object],
+35 silly batched        'react-virtualized' => [Object] },
+35 silly batched     localDependencies: Map {},
+35 silly batched     localDependents: Map {} } ]
+36 info publish Publishing packages to npm...
+37 silly verifyNpmPackageAccess
+38 http fetch GET 200 https://registry.npmjs.org/-/org/ptahv/package?format=cli 786ms
+39 silly getCurrentSHA
+40 verbose getCurrentSHA afe9b7cb42b3b08334c56227bf6ab1445f0b90cc
+41 silly getExecOpts C:\repos\ptahv\roids undefined
+42 silly exec npm options { cwd: 'C:\\repos\\ptahv\\roids',
+42 silly exec   env: { npm_config_json: true },
+42 silly exec   stdio: [ 'ignore', 'pipe', 'inherit' ] }
+43 silly run-lifecycle prepublishOnly bsify
+44 info lifecycle bsify@0.0.1-develop.9~prepublishOnly: bsify@0.0.1-develop.9
+45 verbose lifecycle bsify@0.0.1-develop.9~prepublishOnly: unsafe-perm in lifecycle true
+46 verbose lifecycle bsify@0.0.1-develop.9~prepublishOnly: PATH: C:\Users\Petri\AppData\Roaming\npm\node_modules\lerna\node_modules\npm-lifecycle\node-gyp-bin;C:\repos\ptahv\roids\packages\bsify\node_modules\.bin;C:\app\client\Petri\product\12.2.0\client_3;C:\app\client\Petri\product\12.2.0\client_3\bin;C:\app\client\Petri\product\12.2.0\client_2;C:\app\client\Petri\product\12.2.0\client_2\bin;C:\app\client\Petri\product\12.2.0\client_1;C:\app\client\Petri\product\12.2.0\client_1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\libnvvp;C:\Programs\Python36\Scripts\;C:\Programs\Python36\;C:\Programs\Python36-32\Scripts\;C:\Programs\Python36-32\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Mercurial\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Programs\nodejs\;C:\Programs\Microsoft VS Code\bin;C:\Users\Petri\AppData\Local\Microsoft\WindowsApps;;C:\Programs\Microsoft VS Code\bin;C:\Users\Petri\AppData\Roaming\npm
+47 verbose lifecycle bsify@0.0.1-develop.9~prepublishOnly: CWD: C:\repos\ptahv\roids\packages\bsify
+48 silly lifecycle bsify@0.0.1-develop.9~prepublishOnly: Args: [ '/d /s /c', 'npm run build' ]
+49 silly lifecycle bsify@0.0.1-develop.9~prepublishOnly: Returned: code: 0  signal: null
+50 verbose pack [ 'bsify' ]
+51 silly exec npm [ 'pack', 'C:\\repos\\ptahv\\roids\\packages\\bsify' ]
+52 notice
+53 notice package: bsify@0.0.1-develop.9
+54 notice === Tarball Contents ===
+55 notice 1.1kB  package.json
+55 notice 1.1kB  LICENSE
+55 notice 61B    README.md
+55 notice 91.3kB dist/bsify.js
+55 notice 17.5kB dist/bsify.min.js
+55 notice 1.0kB  src/index.js
+56 notice === Tarball Details ===
+57 notice name:          bsify
+57 notice version:       0.0.1-develop.9
+57 notice filename:      bsify-0.0.1-develop.9.tgz
+57 notice package size:  33.9 kB
+57 notice unpacked size: 112.1 kB
+57 notice shasum:        8f6d124d1bc3ef1dd03c8f19976bca2fffabc308
+57 notice integrity:     sha512-CdKXqQkSfADle[...]3e4lRaWdi9Eig==
+57 notice total files:   6
+58 notice
+59 silly run-lifecycle prepublishOnly komponents
+60 info lifecycle komponents@0.0.1-develop.2~prepublishOnly: komponents@0.0.1-develop.2
+61 verbose lifecycle komponents@0.0.1-develop.2~prepublishOnly: unsafe-perm in lifecycle true
+62 verbose lifecycle komponents@0.0.1-develop.2~prepublishOnly: PATH: C:\Users\Petri\AppData\Roaming\npm\node_modules\lerna\node_modules\npm-lifecycle\node-gyp-bin;C:\repos\ptahv\roids\packages\komponents\node_modules\.bin;C:\app\client\Petri\product\12.2.0\client_3;C:\app\client\Petri\product\12.2.0\client_3\bin;C:\app\client\Petri\product\12.2.0\client_2;C:\app\client\Petri\product\12.2.0\client_2\bin;C:\app\client\Petri\product\12.2.0\client_1;C:\app\client\Petri\product\12.2.0\client_1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\libnvvp;C:\Programs\Python36\Scripts\;C:\Programs\Python36\;C:\Programs\Python36-32\Scripts\;C:\Programs\Python36-32\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Mercurial\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Programs\nodejs\;C:\Programs\Microsoft VS Code\bin;C:\Users\Petri\AppData\Local\Microsoft\WindowsApps;;C:\Programs\Microsoft VS Code\bin;C:\Users\Petri\AppData\Roaming\npm
+63 verbose lifecycle komponents@0.0.1-develop.2~prepublishOnly: CWD: C:\repos\ptahv\roids\packages\komponents
+64 silly lifecycle komponents@0.0.1-develop.2~prepublishOnly: Args: [ '/d /s /c', 'npm run build' ]
+65 silly lifecycle komponents@0.0.1-develop.2~prepublishOnly: Returned: code: 0  signal: null
+66 verbose pack [ 'komponents' ]
+67 silly exec npm [ 'pack', 'C:\\repos\\ptahv\\roids\\packages\\komponents' ]
+68 notice
+69 notice package: komponents@0.0.1-develop.2
+70 notice === Tarball Contents ===
+71 notice 1.6kB   package.json
+71 notice 1.1kB   LICENSE
+71 notice 38B     README.md
+71 notice 897.2kB dist/kontti.js
+71 notice 118.4kB dist/kontti.min.js
+71 notice 0       src/components/Button/Button.js
+71 notice 1.4kB   src/components/confirmPopup/confirmPopup.jsx
+71 notice 39B     src/components/confirmPopup/confirmPopup.module.css
+71 notice 3.3kB   src/components/Dropdown/Dropdown.jsx
+71 notice 29B     src/components/Dropdown/Dropdown.module.css
+71 notice 1.4kB   src/components/Fullscreen/Fullscreen.jsx
+71 notice 159B    src/components/Fullscreen/Fullscreen.module.css
+71 notice 684B    src/components/Loading/Loading.jsx
+71 notice 1.0kB   src/components/Loading/Loading.module.css
+71 notice 611B    src/components/Page/Content/Content.jsx
+71 notice 283B    src/components/Page/Content/Content.module.css
+71 notice 198B    src/components/Page/Footer/Footer.jsx
+71 notice 209B    src/components/Page/Info/Info.jsx
+71 notice 371B    src/components/Page/Page.jsx
+71 notice 2.1kB   src/components/pdfViewer/IframePdfPopup.jsx
+71 notice 1.3kB   src/components/pdfViewer/pdfViewer.js
+71 notice 238B    src/components/Popup/Content/Content.jsx
+71 notice 67B     src/components/Popup/Content/Content.module.css
+71 notice 194B    src/components/Popup/Footer/Footer.jsx
+71 notice 1.2kB   src/components/Popup/Popup.jsx
+71 notice 205B    src/components/Popup/Popup.module.css
+71 notice 2.9kB   src/components/VList/VList.component.jsx
+71 notice 265B    src/components/VTable/VTable.core.js
+71 notice 540B    src/components/VTable/VTable.css
+71 notice 8.0kB   src/components/VTable/VTable.jsx
+71 notice 147B    src/index.js
+72 notice === Tarball Details ===
+73 notice name:          komponents
+73 notice version:       0.0.1-develop.2
+73 notice filename:      komponents-0.0.1-develop.2.tgz
+73 notice package size:  267.1 kB
+73 notice unpacked size: 1.0 MB
+73 notice shasum:        8c5d7b1246881d239b5cfaff745c10f996c45f83
+73 notice integrity:     sha512-I4ctqQEnAIU84[...]KGfz3kdwYA9gA==
+73 notice total files:   31
+74 notice
+75 verbose publish bsify
+76 silly getExecOpts C:\repos\ptahv\roids\packages\bsify https://registry.npmjs.org/
+77 silly exec npm [ 'publish', '--ignore-scripts', 'bsify-0.0.1-develop.9.tgz' ]
+78 info published bsify 0.0.1-develop.9
+79 verbose publish komponents
+80 silly getExecOpts C:\repos\ptahv\roids\packages\komponents https://registry.npmjs.org/
+81 silly exec npm [ 'publish',
+81 silly exec   '--ignore-scripts',
+81 silly exec   'komponents-0.0.1-develop.2.tgz' ]
+82 info published komponents 0.0.1-develop.2
+83 silly gitCheckout packages/*/package.json
+84 silly gitCheckout projects/*/package.json
+85 error Error: Command failed: git checkout -- projects/*/package.json
+85 error error: pathspec 'projects/*/package.json' did not match any file(s) known to git.
+85 error
+85 error     at makeError (C:\Users\Petri\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:174:9)
+85 error     at Promise.all.then.arr (C:\Users\Petri\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:278:16)
