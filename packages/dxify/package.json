@@ -21,10 +21,13 @@
     "url": "https://github.com/ptahv/roids/issues"
   },
   "homepage": "https://github.com/ptahv/roids#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.5",
-    "@babel/preset-env": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
     "rollup": "^0.67.1",
     "rollup-plugin-babel": "^4.0.3",
@@ -33,9 +36,9 @@
     "rollup-plugin-replace": "^2.1.0",
     "rollup-plugin-terser": "^3.0.0"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.3.0",
-    "@babel/polyfill": "^7.0.0",
+    "devextreme": "^18.2.3",
     "devextreme-react": "^18.2.3"
   }
 }

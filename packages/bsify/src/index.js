@@ -1,18 +1,21 @@
 import React from 'react';
 
 function createPropsCreator(
-    className = '', 
+    baseClassName = '', 
     propClassNames = {}, 
 ) {
-    return (props) => {
+    return ({className, ...props}) => {
         const propKeys = Object.keys(props);
         const propClassNameKeys = Object.keys(propClassNames)
 
         return {
-            className: className + ' ' + propKeys
+            className: [
+                baseClassName,
+                className
+            ].concat(propKeys
                 .filter(p => propClassNameKeys.includes(p))
                 .map(p => propClassNames[p])
-                .join(' '),
+            ).join(' '),
 
             ...propKeys.reduce((retVal, key) => {
                 if (!propClassNameKeys.includes(key))

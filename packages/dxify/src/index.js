@@ -1,30 +1,34 @@
 import React from 'react';
 
-import 'devextreme/dist/css/dx.common.css';
-import 'devextreme/dist/css/dx.light.compact.css';
+import defaultConfig from './default.config.js';
 
-export default (DxComponent, defaultConfig) => React.forwardRef((props, ref) => {
-    const {
-        _header,
-        _style = {},
-        _className = '',
+export default (() => {
+    let config = defaultConfig;
 
-        ...componentProps
-    } = props;
+    return Object.assign((DxComponent) => React.forwardRef((props, ref) => {
+        const {
+            _header,
+            _style = {},
+            _className = '',
+    
+            ...componentProps
+        } = props;
 
-    return (
-        <div 
-            style={_style}
-            className={_className} 
-            >
-            {_header && (
-                <h6><small> {_header} </small></h6>
-            )}
-            <DxComponent
-                ref={ref}
-                {...Object.assign({}, defaultConfig, componentProps)} 
-                />
-        </div>
-        )
-    }
-);
+        return (
+            <div 
+                style={_style}
+                className={_className} 
+                >
+                {_header && (
+                    <h6 className='m-0'><small> {_header} </small></h6>
+                )}
+                <DxComponent
+                    ref={ref}
+                    {...Object.assign({}, config[DxComponent.name], componentProps)} 
+                    />
+            </div>
+            )
+        }), 
+        { setConfig: (c) => {config = c} }
+    );
+})();

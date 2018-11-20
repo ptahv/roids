@@ -1,6 +1,6 @@
 {
   "name": "kontti",
-  "version": "3.1.0-develop.0",
+  "version": "3.0.1",
   "description": "React viewmodel library",
   "main": "dist/kontti.min.js",
   "files": [
@@ -27,11 +27,18 @@
     "url": "https://github.com/ptahv/roids/issues"
   },
   "homepage": "https://github.com/ptahv/roids#readme",
+  "peerDependencies": {
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "lodash": "^4.17.11"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.5",
-    "@babel/preset-env": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
     "rollup": "^0.67.1",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.2.0",
@@ -41,8 +48,6 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "lodash": "^4.17.10",
-    "react": "^16.3.0",
     "striimi": "^2.0.1"
   }
 }

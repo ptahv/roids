@@ -6,7 +6,6 @@ function exec(cmd) {
   execSync(cmd, { stdio: "inherit", env: process.env });
 }
 
-
 fs.readdirSync('./packages/').forEach(
     package => {
         exec('npm run build --prefix ./packages/' + package);

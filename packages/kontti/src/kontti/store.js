@@ -1,13 +1,13 @@
 import pick from 'lodash/fp/pick';
 import isEmpty from 'lodash/fp/isEmpty';
-import {stream} from 'striimi';
+import striimi from 'striimi';
 
 import cloneDeep from '../lib/cloneDeep.js';
 
 export default (values,	actionsFn) => {
     let store 	            = cloneDeep(values);
     const storeKeys 	    = Object.keys(values);
-    const changedKeysStream = stream(storeKeys);
+    const changedKeysStream = striimi(storeKeys);
 
     // Could show an error if inserting keys that doesnt exist in store
     //

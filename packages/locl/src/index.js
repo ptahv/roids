@@ -2,11 +2,10 @@ import striimi from 'striimi';
 
 const stream = striimi;
 
-
 export default (() => {
-	let language = ''
 	let locales = {}
-	const localesStream = stream(_locales)
+	let language = ''
+	const localesStream = stream(locales)
 
 	function get(locale) {
 		if (typeof locale === 'function')

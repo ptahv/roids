@@ -7,7 +7,7 @@ export default ({
 	children
 }) => (
 	<div
-		className={'p-1 border-top bg-white ' + className} 
+		className={'p-2 border-top bg-white ' + className} 
 		style={style}
 		>
 		{children}

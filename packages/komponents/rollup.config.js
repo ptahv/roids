@@ -14,9 +14,7 @@ const plugins = [
         exclude: 'node_modules/**'
     }),
 
-    commonjs({ 
-        namedExports: { 'react-dom': ['render'] }
-    }),
+    commonjs(),
 
     postcss({
         autoModules: true,
@@ -25,11 +23,13 @@ const plugins = [
 ]
 
 export default [{
+    external: ['react', 'react-dom'],
     input: 'src/index.js',
     output: {
-        file: 'dist/kontti.js',
+        globals: { react: 'React', 'react-dom': 'ReactDOM' },
+        file: 'dist/komponents.js',
         format: 'umd',
-        name: 'kontti',
+        name: 'komponents',
         indent: false
     },
     plugins: plugins.concat([
@@ -38,11 +38,13 @@ export default [{
         })
     ])
 }, {
+    external: ['react', 'react-dom'],
     input: 'src/index.js',
     output: {
-        file: 'dist/kontti.min.js',
+        globals: { react: 'React', 'react-dom': 'ReactDOM' },
+        file: 'dist/komponents.min.js',
         format: 'umd',
-        name: 'kontti',
+        name: 'komponents',
         indent: false
     },
     plugins: plugins.concat([

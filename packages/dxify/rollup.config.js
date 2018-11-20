@@ -50,5 +50,26 @@ export default [{
             }
         })
     ])
+}, {
+    input: 'src/default.config.js',
+    output: {
+        file: 'dist/default.config.js',
+        format: 'umd',
+        name: 'default-config',
+        indent: false,
+    },
+    plugins: plugins.concat([
+        replace({
+            'process.env.NODE_ENV': JSON.stringify('production')
+        }),
+        terser({
+            compress: {
+                pure_getters: true,
+                unsafe: true,
+                unsafe_comps: true,
+                warnings: false
+            }
+        })
+    ])
 }]
     
