@@ -25,12 +25,12 @@
     "url": "https://github.com/ptahv/roids/issues"
   },
   "homepage": "https://github.com/ptahv/roids#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  },
   "peerDependencies": {
     "bootstrap": "^4.1.3",
     "react": "^16.3.0"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",

@@ -36,8 +36,8 @@ export default Object.assign(({
                 )}
 
                 {header && (
-                    <div className='bg-white px-2 py-2 m-0 border-bottom'> 
-                        <h5>{header}</h5>
+                    <div className='bg-white px-3 py-2 m-0 border-bottom'> 
+                        <h5 className='m-0'>{header}</h5>
                     </div>
                 )}
                 {children}

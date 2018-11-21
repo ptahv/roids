@@ -24,6 +24,11 @@
   "dependencies": {
     "@babel/polyfill": "^7.0.0"
   },
+  "peerDependencies": {
+    "react": "^16.3.0",
+    "devextreme": "^18.2.3",
+    "devextreme-react": "^18.2.3"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
@@ -35,10 +40,5 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-replace": "^2.1.0",
     "rollup-plugin-terser": "^3.0.0"
-  },
-  "peerDependencies": {
-    "react": "^16.3.0",
-    "devextreme": "^18.2.3",
-    "devextreme-react": "^18.2.3"
   }
 }

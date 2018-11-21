@@ -7,7 +7,7 @@ export default ({
     children
 }) => (
 	<div 
-		className={'position-relative w-100 bg-white p-2 ' + className}
+		className={'w-100 px-3 py-2 position-relative ' + className}
 		style={style}
 		>
 		{children}

@@ -7,7 +7,7 @@ export default ({
 	children
 }) => (
 	<div
-		className={'p-2 border-top bg-white ' + className} 
+		className={'px-3 py-2 border-top position-relative ' + className} 
 		style={style}
 		>
 		{children}
