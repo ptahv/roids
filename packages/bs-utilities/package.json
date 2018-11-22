@@ -1,9 +1,0 @@
-{
-  "name": "bs-utilities",
-  "version": "0.0.1-develop.0",
-  "description": "Bootstrap 4 utilities with NO !important.",
-  "main": "index.js",
-  "scripts": {},
-  "author": "Petri Tahvanainen",
-  "license": "MIT"
-}

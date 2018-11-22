@@ -1,0 +1,17 @@
+{
+  "name": "bs-utils",
+  "version": "0.0.1-develop.0",
+  "description": "Bootstrap 4 utilities with NO !important.",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/utils.scss dist/bootstrap.min.css --style compressed"
+  },
+  "author": "Petri Tahvanainen",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "4.1.3"
+  },
+  "peerDependencies": {
+    "bootstrap": "4.1.3"
+  }
+}

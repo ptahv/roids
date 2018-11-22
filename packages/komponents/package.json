@@ -30,7 +30,7 @@
   "homepage": "https://github.com/ptahv/roids#readme",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "bsify": "^0.0.1-develop.9"
+    "class-names-builder": "^0.0.1-develop.0"
   },
   "peerDependencies": {
     "bootstrap": "^4.1.3",
