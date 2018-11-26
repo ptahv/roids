@@ -4,16 +4,15 @@
   "description": "Bootstrap 4 utilities with NO !important.",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass --include-path ../../ --output-style compressed src/bootstrap.scss dist/bootstrap.min.css"
+    "build": "node-sass src/bootstrap.scss dist/bootstrap.min.css --output-style compressed"
   },
   "author": "Petri Tahvanainen",
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "4.1.3",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "bootstrap": "4.1.3"
   },
   "peerDependencies": {
     "bootstrap": "4.1.3"
-  },
-  "dependencies": {}
+  }
 }
