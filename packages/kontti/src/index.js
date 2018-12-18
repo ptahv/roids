@@ -7,7 +7,6 @@ import createConsumer from './kontti/consumer.jsx';
 import createPureConsumer from './kontti/pureConsumer.jsx';
 
 import createUseKontti from './utils/useKontti.js';
-import createFnsProvider from './utils/fnsProvider.js';
 
 export const container = createContainer;
 
@@ -17,7 +16,6 @@ export const Consumer = createConsumer(GlobalContainer);
 export const PureConsumer = createPureConsumer(Consumer);
 
 export const useKontti = createUseKontti(GlobalContainer);
-export const fnsProvider = createFnsProvider(provider);
 
 export default {
     container,
@@ -26,6 +24,5 @@ export default {
     Consumer,
     PureConsumer,
 
-    useKontti,
-    fnsProvider
+    useKontti
 }
